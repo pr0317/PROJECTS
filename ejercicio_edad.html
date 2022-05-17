@@ -1,0 +1,47 @@
+<html>
+<meta charset="UTF-8"> 
+
+<h1 style='color: #07529c'>
+    DIFERENCIA DE EDAD ENTRE LEYDI Y KEVIN
+</h1>
+
+<h3 style='color:  #05ab86'>
+    Objetivo del proyecto:
+</h3>
+
+<p>
+    Es con el fin de poner a prueba lo aprendido hasta el momento a traves del curso "Lógica de programación parte 1" dado por Alura
+<hr>
+    Hasta el momento aplicamos conceptos basicos de JS y de HTML5, así como el uso de variables y funciones para optimizar y evitar
+    duplicidad de lineas de código.
+<hr>
+</p>
+
+<script>   
+    //variables globales de año, leydi (l) y kevin (k)
+    var y = 2022, l = 2001, k = 1999;
+
+    //Función para salto de linea entre parrafos
+    function jump_lines(){
+        "<br>","<br>","<br>","<br>"
+    }
+
+    //Función para imprimir mensajes en formato HTML.
+    function imp(mensaje){
+        document.write(mensaje);
+        jump_lines();
+    }
+
+    imp("<p style= 'color:  #97088e'> Leydi nació en el año: " + l + "</p>");
+    imp("<p style= 'color:  #62ca0c'> Kevin nació en el año: " + k + "</p>");
+
+    //Función para restar valores enteros.
+    function resta(){
+        result = l-k;
+        return result;
+    }   
+
+    imp("Nuestra diferencia de edad es: " + "<a style= 'color: #d83691'>" + resta() + "</a>" + " años")
+
+</script>
+</html>

@@ -6,11 +6,11 @@
     document.write(jumSemple);
     document.write(2022-23);
     document.write(jumSemple);
-    document.write("El año de nacimiento de Kevin es...");
+    document.write("El año de nacimiento de Paula es...");
     document.write(jumSemple);
     document.write(2022-25);
     document.write(jumSemple);
-    document.write("El año de nacimiento de Kevin es...");
+    document.write("El año de nacimiento de Jorge es...");
     document.write(jumSemple);
     document.write(2022-15);
     document.write(jumSemple);
@@ -22,14 +22,25 @@
 </script>
 
 <script>
+    function salto_line(){
+        jumSemple = "<br><br>"
+    }
     var anno = 2022;
-    var jumSemple = "<br><br>";
+    function imprimir(frase){
+        document.write(frase);
+        salto_line();
+    }
 
-    document.write(jumSemple);
+    
 
-    document.write("<h1 style='color: blue;'>Mi año de nacimiento es: </h1> " + (anno-23));
 
-    document.write(jumSemple);
+
+    imprimir("<h1 style='color: blue;'>Mi año de nacimiento es: </h1> " + (anno-23));
+
+    //document.write("<h1 style='color: blue;'>Mi año de nacimiento es: </h1> " + (anno-23));
+
+ 
+
     
 
     var edadJimena = 10;
@@ -45,5 +56,6 @@
     document.write("El promedio de las edades de:  " + name1 + ", " + name2 + " y " + name3 + " es: " + Math.round(prom));
     
     document.write(jumSemple);
+
        
 </script>
