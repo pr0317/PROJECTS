@@ -1,0 +1,27 @@
+<html>
+<meta charset="UTF-8">
+<h1>
+    PROGRAMA JUEGO DE ADIVINAR
+</h1>
+
+<script>
+    function jump_lines(){
+        document.write("<br>","<br>","<br>","<br>")
+    }
+
+    function imp(mensaje){
+        document.write(mensaje);
+        jump_lines();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var numerLanzado = parseInt(prompt("Ingrese un número enrte 0-10"))
+
+    if(numeroPensado == numerLanzado){
+        imp("Usted Acertó");
+    }else{
+        imp("No acertó el número que introdujó: "+ numerLanzado + " y era: " + numeroPensado);}
+        
+    
+</script>
+</html>
