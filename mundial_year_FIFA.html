@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<html> 
+
+<h1 style="color: purple; ">PROGRAMA QUE TE DICE LOS AÑOS DE LOS MUNDIALES</h1>
+<script>
+
+    function jump_lines(){
+        document.write("<br>","<br>","<br>","<br>")
+    }
+
+    function imp(mensaje){
+        document.write(mensaje);
+        jump_lines();
+    }
+
+    var mundialYear = 1930;
+    var limit_Year = parseInt(prompt("Ingrese el año máximo para mostrar: "))
+
+    while(mundialYear <= limit_Year){
+        mundialYear = mundialYear + 4;
+        if(mundialYear > limit_Year || mundialYear == limit_Year){
+            imp("Hasta el proximo mundial será: " + mundialYear)
+        }else{
+            imp("Hubo mundial de la FIFA en el año " + mundialYear);} 
+
+    }
+
+    alert("end of program")
+
+
+</script>
+
+
+</html>
