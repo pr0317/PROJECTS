@@ -15,13 +15,42 @@
     }
 
     var numeroPensado = Math.round(Math.random()*10);
-    var numerLanzado = parseInt(prompt("Ingrese un número enrte 0-10"))
-
-    if(numeroPensado == numerLanzado){
-        imp("Usted Acertó");
-    }else{
-        imp("No acertó el número que introdujó: "+ numerLanzado + " y era: " + numeroPensado);}
-        
+    var intentos = 3;
+    var contador = 1;
     
+
+
+    while(contador <= intentos ) {
+
+        var numerLanzado = parseInt(prompt("Ingrese un número enrte 0-10"))
+            
+        if(numeroPensado == numerLanzado) {
+
+            alert("Usted Acertó, en el intento: " + contador + " el número pensado es: " + numeroPensado);
+            break;
+
+        }
+        else {
+
+            alert("No acertó el número que introdujó: "+ numerLanzado);
+
+        }
+
+        contador ++;
+            
+    }
+
+    if(numeroPensado == numerLanzado) {
+
+        imp("Usted Acertó, en el intento: " + contador + " el número pensado es: " + numeroPensado);
+        
+
+    }
+    else {
+
+        imp("No acertó el número que introdujó: "+ numerLanzado + ", y el número que la maquina pensó fue: " + numeroPensado);
+
+    }
+    imp("################# End Of Program ###################");
 </script>
 </html>

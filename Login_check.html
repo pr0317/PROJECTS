@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>
+    INICIO DE SESIÓN COMPLETO
+</h1>
+
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var intentos = 3
+    var contador = 1
+
+    while(contador <= intentos){
+        
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            contador = intentos;
+        } else {
+            if (contador == 3){
+                
+            alert("Error usuario bloqueado, por favor contacte al Administrador");
+            
+            }else{
+            
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+                
+            }
+
+        }
+        contador ++;
+    }
+
+</script>

@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<h1>
+
+</h1>
+
+<script>
+
+    function jump_lines(){
+        document.write("<br>","<br>","<br>","<br>")
+    }
+
+    function imp(mensaje){
+        document.write(mensaje);
+        jump_lines();
+    }
+
+    
+
+    for(var lineas = 1; lineas <=3; lineas ++){
+
+        for(var column = 1; column <= 10; column ++){
+            
+            document.write("*");
+
+        }
+
+        jump_lines();
+
+    }
+
+    imp("------------ FIN ------------");
+
+
+
+
+
+
+
+
+</script>
